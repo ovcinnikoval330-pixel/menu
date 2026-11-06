@@ -1,3 +1,7 @@
+<!doctype html>
+<html lang="ru">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Меню для ленивых</title>
 <meta name="claude:viewport-fit-sides" content="cover">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -161,6 +165,12 @@ ol.steps li::before {
 .word a { color: inherit; font-weight: 600; }
 .marathon { font-family: var(--font-display); font-size: 26px; line-height: 1.1; }
 
+@media (max-width: 380px) {
+  body { padding-left: max(10px, env(safe-area-inset-left, 0px)); padding-right: max(10px, env(safe-area-inset-right, 0px)); padding-block: 12px 32px; }
+  .page { padding: 24px 18px 20px; border-radius: 18px; }
+  h1, .cover h1 { font-size: 44px; }
+  h2 { font-size: 26px; }
+}
 @media print {
   @page { size: 420px 746px; margin: 0; }
   :root { --bg: #fffaf4; }
